@@ -1,0 +1,2 @@
+/usr/bin/ar cr libgpu_particle.a  CMakeFiles/gpu_particle.dir/src/./gpu_particle_generated_particle.cu.o
+/usr/bin/ranlib libgpu_particle.a

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="GPU_MRPF" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\local\;CMake Files\..\..\..\usr\local\share\;CMake Files\..\..\..\usr\local\share\pcl-1.8\;CMake Files\..\..\..\usr\lib\;CMake Files\..\..\..\usr\lib\vtk-5.8\;CMake Files\..\..\..\usr\lib\vtk-5.8\CMake\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/program/MRPF/GPU_mrpf/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="../gpu_mrpf_node">
+         <Option output="/program/MRPF/GPU_mrpf/build/../gpu_mrpf_node" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/program/MRPF/GPU_mrpf/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DDISABLE_ENSENSO" />
+            <Add option="-DDISABLE_DAVIDSDK" />
+            <Add option="-DDISABLE_DSSDK" />
+            <Add option="-DDISABLE_PCAP" />
+            <Add option="-DDISABLE_PNG" />
+            <Add option="-DDISABLE_LIBUSB_1_0" />
+            <Add option="-DDISABLE_RSSDK" />
+            <Add option="-DEIGEN_USE_NEW_STDVECTOR" />
+            <Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET" />
+            <Add option="-DFLANN_STATIC" />
+            <Add option="-Dqh_QHpointer" />
+            <Add directory="/program/MRPF/GPU_mrpf/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/eigen3" />
+            <Add directory="/usr/include/ni" />
+            <Add directory="/usr/include/openni2" />
+            <Add directory="/usr/include/vtk-5.8" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/lib/x86_64-linux-gnu" />
+            <Add directory="/usr/local/cuda/include" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/pcl-1.8" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 ../gpu_mrpf_node" />
+            <CompileFile command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="../gpu_mrpf_node/fast">
+         <Option output="/program/MRPF/GPU_mrpf/build/../gpu_mrpf_node" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/program/MRPF/GPU_mrpf/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DDISABLE_ENSENSO" />
+            <Add option="-DDISABLE_DAVIDSDK" />
+            <Add option="-DDISABLE_DSSDK" />
+            <Add option="-DDISABLE_PCAP" />
+            <Add option="-DDISABLE_PNG" />
+            <Add option="-DDISABLE_LIBUSB_1_0" />
+            <Add option="-DDISABLE_RSSDK" />
+            <Add option="-DEIGEN_USE_NEW_STDVECTOR" />
+            <Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET" />
+            <Add option="-DFLANN_STATIC" />
+            <Add option="-Dqh_QHpointer" />
+            <Add directory="/program/MRPF/GPU_mrpf/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/eigen3" />
+            <Add directory="/usr/include/ni" />
+            <Add directory="/usr/include/openni2" />
+            <Add directory="/usr/include/vtk-5.8" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/lib/x86_64-linux-gnu" />
+            <Add directory="/usr/local/cuda/include" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/pcl-1.8" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 ../gpu_mrpf_node/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="gpu_particle">
+         <Option output="/program/MRPF/GPU_mrpf/build/libgpu_particle.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/program/MRPF/GPU_mrpf/build" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DDISABLE_ENSENSO" />
+            <Add option="-DDISABLE_DAVIDSDK" />
+            <Add option="-DDISABLE_DSSDK" />
+            <Add option="-DDISABLE_PCAP" />
+            <Add option="-DDISABLE_PNG" />
+            <Add option="-DDISABLE_LIBUSB_1_0" />
+            <Add option="-DDISABLE_RSSDK" />
+            <Add option="-DEIGEN_USE_NEW_STDVECTOR" />
+            <Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET" />
+            <Add option="-DFLANN_STATIC" />
+            <Add option="-Dqh_QHpointer" />
+            <Add directory="/program/MRPF/GPU_mrpf/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/eigen3" />
+            <Add directory="/usr/include/ni" />
+            <Add directory="/usr/include/openni2" />
+            <Add directory="/usr/include/vtk-5.8" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/lib/x86_64-linux-gnu" />
+            <Add directory="/usr/local/cuda/include" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/pcl-1.8" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 gpu_particle" />
+            <CompileFile command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="gpu_particle/fast">
+         <Option output="/program/MRPF/GPU_mrpf/build/libgpu_particle.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/program/MRPF/GPU_mrpf/build" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DDISABLE_ENSENSO" />
+            <Add option="-DDISABLE_DAVIDSDK" />
+            <Add option="-DDISABLE_DSSDK" />
+            <Add option="-DDISABLE_PCAP" />
+            <Add option="-DDISABLE_PNG" />
+            <Add option="-DDISABLE_LIBUSB_1_0" />
+            <Add option="-DDISABLE_RSSDK" />
+            <Add option="-DEIGEN_USE_NEW_STDVECTOR" />
+            <Add option="-DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET" />
+            <Add option="-DFLANN_STATIC" />
+            <Add option="-Dqh_QHpointer" />
+            <Add directory="/program/MRPF/GPU_mrpf/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/eigen3" />
+            <Add directory="/usr/include/ni" />
+            <Add directory="/usr/include/openni2" />
+            <Add directory="/usr/include/vtk-5.8" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/lib/x86_64-linux-gnu" />
+            <Add directory="/usr/local/cuda/include" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/pcl-1.8" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 gpu_particle/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/program/MRPF/GPU_mrpf/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/program/MRPF/GPU_mrpf/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/program/MRPF/GPU_mrpf/include/filter.cpp">
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/src/gpu_mrpf.cpp">
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/src/gpu_mrpf_node.cpp">
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/src/mrpf_prestep.cpp">
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/include/common.h">
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/include/filter.h">
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/include/gpu_mrpf.h">
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/include/timer.h">
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/src/particle.cu">
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/local/share/pcl-1.8/PCLConfigVersion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\local\share\pcl-1.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/local/share/pcl-1.8/PCLConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\local\share\pcl-1.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfigVersion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfig-Java.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfig-Python.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfig-Tcl.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfigQt.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKTargets.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKTargets-release.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/UseVTK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfigVersion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfig-Java.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfig-Python.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfig-Tcl.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfigQt.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/UseVTK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfigVersion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfig-Java.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfig-Python.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfig-Tcl.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfigQt.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/UseVTK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfigVersion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfig-Java.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfig-Python.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfig-Tcl.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/VTKConfigQt.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/UseVTK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\" />
+      </Unit>
+      <Unit filename="/program/MRPF/GPU_mrpf/../../../usr/lib/vtk-5.8/CMake/vtkMakeInstantiator.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\vtk-5.8\CMake\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>
